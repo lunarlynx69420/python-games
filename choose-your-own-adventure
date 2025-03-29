@@ -1,0 +1,77 @@
+#Choose Your Own Adventure Game
+
+#Part 1 : Welcome the player
+print("Welcome to the game!")
+
+#Part 2 : Starting the  story
+story = input("Would you like to play in the future or the past? ")
+
+#Part 3 : Making the future story
+if story == "future":
+    print("Good choice!")
+    status_future = input("Are yoou ready? ")
+    if status_future == "yes":
+        print("Alright. Let's Go!")
+        choice_future_1 = input("You have been teleported to the future. It is a mesmerizing sight and everything is so nice. BUT there is a problem. The robots are taking over. Would you still like to go forward with this mission? ")
+        if choice_future_1 == "yes":
+            choice_future_2 = input("Alright then. First, we have to find a way to the robot fortress in the middle of the city. Do want to go the fortress now or bring someone with you? ")
+            if choice_future_2 == "go to the fortress now":
+                choice_future_3 = input("Starting immediately for the fortress. Now, we have to find a way to get inside without being detected by the army of robots outside the gates of the fortress. Should we use the cloaking tech or try to teleport into the fortress? ")
+                if choice_future_3 == "cloaking tech":
+                    choice_future_5 = input("Cloaking tech it is. Going in now. Hope for the best! Ok, we are in. You see a doorway to your left and a keypad to your right. It loks like the keypad has a code that unlocks the door. According to the smudge patterns, the passcode has to be either 1242 or 1424. You lony get one try. Which one? ")
+                    if choice_future_5 == "1424":
+                        print("No! The alarm got triggered because you entered the wrong code. You are put in jail by the robots and will probably die there. GAME OVER")
+                    if choice_future_5 == "1242":
+                        choice_future_6 = input("Ok. The door is now unlocked. You see a green door with a big triangle with text in it. In order to disable cameras so you can roam freely, you need to get in this room and reprogram the robot inside to turn the cams off before he reports you. Do you wa nt to use your cloaking tech again or just run in and kill the robot? ")
+                        if choice_future_6 == "cloaking tech":
+                            print("You safely disable the cameras and finish your mission, and save mankind. Good job, hero. Until next time!")
+                        if choice_future_6 == "kill the robot":
+                            print("The robot was made of titanium and could not be pierced by your measly lasers. He reports you and kills you. GAME OVER")
+                if choice_future_3 == "teleport inside":
+                    print("Ok, trying it now.")
+                    print("Oh no! The robots have a teleportation intercepter to intercept the teleportations that people make.")
+                    print("We have gotten intercepted.")
+                    print("We have spawned in a jail and will likely live out the rest of our days here. GAME OVER")
+            if choice_future_2 == "bring someone with me":
+                choice_future_4 = input("Ok. You have three options, Rob, the human, Bubbles, the cat, or KAY/0, the robot. ")
+                if choice_future_4 == "Rob":
+                    print("He flat out rejected you and told on you to the robots. After some persuasion, he decided to help you. You and him went into the robot fortress with guns and blazed every robot you saw to the ground. You get to the control room, turn off the security cameras and power off the robots, ending the crisis that the humans were in. Thank you for playing.")
+                if choice_future_4 == "KAY/0":
+                     print("As soon as you told him about your plan, he called the robot fortress and reported you for treason. GAME OVER")
+                if choice_future_4 == "Bubbles":
+                    print("Good choice. You had to persuade her and she bit you a few times. She hasn't ever taken vaccines. You die from rabies. GAME OVER")
+        if choice_future_1 == "no":
+            print("Ok. You have been teleported back to the present. Bye and stay safe.")
+    if status_future == "no":
+        print("Ok. Maybe another time then.")
+
+#Part 4 : Making the past story
+if story == "past":
+    print("Good choice!")
+    status_past = input("Are you ready?")
+    if status_past == "yes":
+        print("Alright Let's go!")
+    if status_past == "no":
+        print("Ok. Another time then.")
+    choice_past_1 = input("We have successfully traveled to the past. Nothing is industrialized and it feels nice to be there in a world without pollution or major cities. BUT there is a problem. The human race is in danger and we must team up with someone to help save the world. Would you like to team up with Ooga or Booga for this mission?")
+    if choice_past_1 == "Ooga" or "ooga":
+        print("Ok. He will be the muscle of this mission.")
+        choice_past_2 = input("So, the problem is that the dinosaurs think they are the only ones here and have established dominance over the Earth. We must inform them that we exist and can easily overpower their declining population. We can either start off by you taking the course on dinosaurs that the people are ready to give you or we can directly head in and hope for the best.")
+        if choice_past_2 == "head in and hope for the best":
+            print("You and Ooga went in but you knew nothing about the dinosaurs and got pounced on by the raptors and died. The human race later gets wiped out and you and many more never existed. GAME OVER")
+        if choice_past_2 == "take the course":
+            choice_past_3 = input("Good choice. You take the course and learn that dinosaurs' skin cannot be pierced by the measly arrowheads that the humans use now. So, you now have two options to solve this problem. First, you can use the time machine to go to the future and get guns and rifles. Careful, this might impact the ancient human civilization. Or, you can try to be stealthy and wish that the dinosaurs do not notice you and finish the mission.")
+            if choice_past_3 == "bring in the guns":
+                print("You go into the future and bring the guns in. You defeat the dinosuars, BUT when you try to go back to the present, you find out that you left a gun there by accident and the humans played with it and wiped themselves out. GAME OVER")
+            if choice_past_3 == "go in stealthily":
+                print("The dinosaurs immediately see you with their infrared vision. As you slowly die, you wonder why this wasn't in the course the humans gave you. GAME OVER")
+    if choice_past_1 == "Booga" or "booga":
+        choice_past_4 = input("Good choice. He will be the brains of this mission. He figures out that we can either go in with the arrowheads and try to kill all of them, but the others say that it won't work. Do want to trust the others or trust Booga?")
+        if choice_past_4 == "trust Booga":
+            print("He forgot that arrowheads cannot pierce the skin of dinosaurs and you die when you go into the wild. As you die, you think about how it would have been so much better if you had trusted the others. GAME OVER")
+        if choice_future_4 == "trust the others":
+            choice_past_5 = input("Good choice. Booga later realizes that arrowheads cannot pierce the dinosaurs' skin. You ask him if there are any other solutions he could have to this problem. He says that you could either try to be stealthy while wearing ice on your body to avoid the infrared vision of the dinosours or you can plan an attack where all the humans head in at the same time and try to overpower the dinosaurs.")
+            if choice_past_5 == "wear ice on my body":
+                print("You decided to wear ice on your body. When you actually do it, you realize that this was really stupid becuase we live in a rainforest. So, when you go in, the ice melts and the dinosaurs kill you. As you die, you realize what will happen to your self in the present right now. GAME OVER")
+            if choice_past_5 == "all the humans head in":
+                choice_past_6 = input("All of you head in. The dinosaurs trample some of you in a stampede, but enough of you survive to kill all of them. You saved the world. Thank You")
