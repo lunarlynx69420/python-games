@@ -1,0 +1,19 @@
+#Dice Roll Game
+
+#Part 1 : Welcome the player
+print("Welcome to the dice roll game!")
+name = input("What is your name? ")
+print("Nice to meet you,", name, "!")
+
+#Part 2 : Roll the dice
+import random
+dice=[1,2,3,4,5,6]
+roll_again = "yes"
+while roll_again == "yes" or roll_again == "y":
+    print("Rolling the dices...")
+    print("The values are....")
+    value1=random.choice(dice)
+    value2=random.choice(dice)
+    print(value1,value2)
+    roll_again = input("Press 'y' or 'yes' to roll the dices again.")
+print("Have a good day.")
